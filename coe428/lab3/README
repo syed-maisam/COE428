@@ -1,0 +1,18 @@
+Syed Maisam Abbas - 501103255
+
+In this lab the objective was to implement two codes for the mergeSort and insertionSort using the mySort() function. The results proved to be sucessful as the given inputs were analyzed and returned in ascending order. This program works efficiently using the mergeSort/insetionSort operator or through a data.txt file.
+
+ANALYSIS: 
+
+___insertionSort.c___
+
+Best case: The equations for best case are: n-1 compartions, 0 swaps since it is the bet case, and n copy operations.
+Average case: The equations for the average case are: n-1 comparsions, 0 swaps, and 0 copy operations
+Worst case: The equations for the worst case are: (n^2 - n) / 2 compartions, (n^2 - n) / 2 swaps, and n copy operations.
+                                                                                                                                                    
+___mergeSort.c___
+
+Best case: The equations for the best case are: nlogn for comparsion, 0 swaps, and 2nlogn copy operations.
+Average case: The equations for average case are: nlogn for comparsion, 0 swaps, and 2nlogn copy operations
+Worst case: The equations for worst case are: nlogn for comparsion, 0 swaps, and 2nlogn copy comparsions
+

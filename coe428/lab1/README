@@ -1,0 +1,24 @@
+Question:
+
+Suppose you were given an object module (with no access to source code) that sorted an array of integers
+very efficiently. However, the sort function in the object module must be invoked with the following
+signature:
+betterSort(int data[], first, last);
+where the array to sort is data and the parameters first and last give the indices of the portion of the array
+that is to be sorted.
+How could you write a mySort() function with the signature used in this lab that could exploit the better
+sorting function in the supplied object module?
+
+Answer:
+To create a betterSort() function that exploits the mySort() function and implements the provided
+signature you would reassign the parameters. The mySort function only accepts two parameters, int d[]
+and unsigned int n, where int d[] is the array to be sorted and n is the length of the this array. Whereas, the
+betterSort function accepts three, int data[], first, and last. The parameters first and last indicates the
+portion of an array (defined in data[]) that needs to be sorted. By implementing a code that identifies the
+length of this portion of the array (that will be later set to int d[]) you can initialize the variable, unsigned
+int n. Therefore, since the induced array collected from data[] is reassigned to d[] and the length of d[] is
+reassigned to unsigned int n (found by implementing a code in the betterSort() function) the betterSort
+function can be sorted by exploiting the mySort function while using the provided signature.
+
+Lab Observations: 
+To summarize this lab, the given files were implemented, modified, and compiled to assure that the program is executed efficently provided the approapriate inputs. The main file (sortMain2.c) implements the functions cmdlineArgsDemo, mySort.h, and mySort.c to convert the given values into an array and sort them in ascending order. Therefore, after a thorough analysis and observation of the results, it can be concluded that the lab operates effectively and contains no errors. 

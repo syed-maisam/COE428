@@ -1,0 +1,30 @@
+Syed Maisam Abbas
+Student Number: 501103255
+
+The stand-alone tag combines both the start-tag and the end-tag. It is defined with a ‘/’ that is placed before the ‘>’ in the tag itself. With this implementation, the requirements of part 1 of this lab can be altered to apply the stand-alone tag.
+
+1. Search for the ‘/’ in the substring (defined as the node) taken from the input. Next check if the n-1 character is a slash (n being the number of characters in the string).
+Determine the beginning of the tag and the type of the tag
+
+2. Same method as before 
+determine the tags identity
+
+3. Stand-alone tags act as both start and end tags
+For start-tags: Push the start-tag onto the stack
+
+4. Stand-alone tags act as both start and end tags
+For end-tags: pop the stack and verify that the popped identity is the same as the input (end-tag identity)
+
+5. If the identities dont match (expression is invalid)
+
+6. If they match no error detected yet
+
+7. Repeat step 1 
+
+8. Validate the input and stop the program (only valid if the stack is empty)
+
+To allow stand-alone tags into the XML expression, we must modify the code to classify them as a separate type of tag.
+
+To do this, we can add another condition to the check for a closed angle bracket (>). If a slash (/) appears before the closing angle bracket, this tag is a stand-alone one. This time, we can handle it by pushing the tag identity directly into the stack rather than popping any earlier start-tag identities.
+
+

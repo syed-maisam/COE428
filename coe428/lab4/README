@@ -1,0 +1,34 @@
+Syed Maisam Abbas - 501103255
+
+________________________________________________________________
+OUTPUT OF THE COMMAND:
+
+Hello 
+
+Your personalized state machine description for Lab 4 (coe 428) follows:
+
+A F E
+B B C
+C H D
+D E G
+E G B
+F B A
+G A H
+H D F
+
+Your starting state is: D 
+
+   Good luck!
+_____________________________________________________________
+
+Two structs, State and StateMachine, are used in this code to define a state machine. 
+A state is described by its name, the number of subsequent states it contains, and an array of pointers to those states. 
+The current state, the number of states it contains, and an array of pointers to those states define a state machine. 
+A state machine's current state can be changed, new states and state machines can be created, states can be added, states can be found by name in a state machine, level machines can have their current states changed, and inaccessible states (also known as junk in the code) may be found and removed.
+The "create_state" method initialises a new state's name, allocates memory for it dynamically, and reduces the number of states it will have after it to 0. 
+A new state is added to the array of following states of a given state using the "add_next_state" function. 
+The "create_state_machine" function changes the current state to NULL, initialises the number of states to 0, and dynamically allocates memory for a new state machine. 
+The "add_state function" increases the array of states in a given state machine by adding a new state. 
+In a state machine, the "find_state" function looks for a state by name and returns a pointer. 
+
+
